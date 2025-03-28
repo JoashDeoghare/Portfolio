@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body{
+    background: #1f242d;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    z-index: 100;
+    background: #1f242d;
+}
+
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{  
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color: #7cf03d;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: white;
+}
+
+.home-info h1{
+    font-size: 40px;
+}
+
+.home-info h2{
+    font-size: 22px;
+    margin-top: -10px;
+}
+
+.home-info p{
+    font-size: 10px;
+    margin: 10px 0 25px;
+}
+
+.home-info .btn-sci{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #7cf03d;
+    border: 2px solid #7cf03d;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #7cf03d;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: none;
+}
+
+.home-info .btn-sci .sci{
+    margin-left: 20px;
+}
+
+.home-info .btn-sci .sci a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #7cf03d;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #7cf03d;
+    margin: 0 8px;
+    transition: 0.5s;
+}
+
+.home-info .btn-sci .sci a:hover{
+    background: #7cf03d;
+    color: #1f242d;
+    box-shadow: 0 0 10px #7cf03d;
+}
+
+.home-img .img-box{
+    position: relative;
+    width: 31vw;
+    height: 31vw;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-img .img-box::before,
+.home-img .img-box::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent,transparent,
+    transparent, #7cf03d);
+}
+
+.home-img .img-box .img-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #1f242d;
+    border-radius: 50%;
+    border: .1px solid #1f242d;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-img .img-box .img-item img{
+    position: absolute;
+    display: block;
+    width: 75%;
+    object-fit: cover;
+    top: -20px;
+    mix-blend-mode: lighten;
+}
+
+
+/* Education */
+
+/* .education{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    padding: 0 9% 0;
+    color: white;
+} */
+
+h1{
+    font-size: 30px;
+    bottom: 20px;
+    margin: 2px;
+}
+
+h2{
+    font-size: 22px;
+}
+
+/* p{
+    margin: 5px;
+} */
+
+.experience, .Skills, .certifications, .education {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content:center;
+    height: 100vh;
+    width: 100%;
+    padding: 0 9% 0;
+    color: white;
+}
+
+/* .inner_content{
+    color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    width: 100%; */
+    /* margin: 0.5%; */
+/* } */
+
+.inner_heading{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 100%;
+}
+
+.data{
+    margin: 0 2% 0;
+}
+
+.masters, .bachelors{
+    width:100%;
+    height: auto;
+    margin-top: 2%;
+}
+
+
+
+.card {
+    width: 100%;
+    background-color: rgb(78, 78, 78);
+    border-radius: 10px;
+    margin-bottom: 2%;
+    color: white;
+    padding: 10px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    padding: 8% 9% 0;
+    color: white;
+}
+
+.certifications{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h6{
+    font-size: 15px;
+    margin-bottom: 2%;
+    font-weight: lighter;
+}
+
